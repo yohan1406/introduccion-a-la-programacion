@@ -1,39 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define max(a,b) (a>=b)? a:b
-int absoluto(int x){
-  return (x>0)? x:-x;
-  
-}
-
+ 
 int main(int argc, char *argv[])
 {
-int A,B,R; A=-10; B=725; 
-A=absoluto(A); 
-B=absoluto(B);
-  printf("%d\t%d\n",A,B);
-  R= A;
-  A=max(A,B); B= (A-R!=0)?R:B;
-  printf("%d\t%d\n",A,B);
-inicio:
-   //system("pause");
-   R=A%B; 
-   A=B; printf("R=%d\tB=%d\n",R,B);
-   B=(R==0)?B:R;
-//aveces se ouede incluir codigo de esamblador in line __asm("mov $0x0,%eax");
-   
-  // goto inicio; 
-     R=A%B; 
-   A=B; printf("R=%d\tB=%d\n",R,B);
-   B=(R==0)?B:R;  
-   
-salida:
-       //R=A and_eq B;
-       A=-1;int i;
-       for(i=31;i>=1;i--){
-       B=A>>i; 
-       printf("%d",B&1);
-       }
+  const float in=2.54, yd=3, m=100, cm=m/100;
+ 
+  printf ("ingresa el numero de pies para realizar las conversiones");
+  scanf ("%f", &ft);
+ 
+  ft=12*in;
+  in=2.54*cm;
+  m=100*cm;
+  cm=m/100;
+  printf ("el valor de %f ft es %f in\n",ft,in);
+  printf ("el valor de yd es %f\n",yd);
+  printf ("el valor de in es %f\n",in);
+  printf ("el valor de m es %f\n",m);
+  printf ("el valor de cm es %f\n",cm);
   system("PAUSE");	
   return 0;
 }
