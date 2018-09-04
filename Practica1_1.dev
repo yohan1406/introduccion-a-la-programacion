@@ -1,6 +1,6 @@
 [Project]
-FileName=Practica1_4.dev
-Name=Proyecto 1
+FileName=Practica1_1.dev
+Name=Practica1_1
 UnitCount=1
 Type=1
 Ver=1
@@ -30,7 +30,7 @@ CompilerSet=0
 CompilerSettings=
 
 [Unit1]
-FileName=pactica1_5.c
+FileName=prectica1_1.c
 CompileCpp=0
 Folder=
 Compile=1
